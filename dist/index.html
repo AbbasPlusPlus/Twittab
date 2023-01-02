@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>New Tab</title>
+    <meta charset="utf-8">
+    <style>
+        html
+        body {
+            background: #101318;
+            color: #222830;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .title {
+            /*line-height:  1;*/
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            
+        }
+
+        .titleMain {
+             font-weight: 100;
+  font-size: clamp(2rem, -0.4rem + 10vw, 5rem);
+  text-align: center;
+  word-wrap: break-word;
+  color: white;
+        }
+
+        .titleSub {
+            font-weight: 700;
+            font-size: clamp(1.5rem, -0.4rem + 5vw, 2.5rem);
+            text-transform: uppercase;
+                        font-size: 250%;
+                          color: white;
+
+
+        }
+
+        ::selection {
+            background-color: #cc5630;
+        }
+
+        options {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: #222830;
+            border: 2px solid #cc5630;
+        }
+
+        options h2 {
+            text-align: center;
+            color: #ffffff;
+            text-transform: uppercase;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+
+        options button {
+            box-shadow: inset 0px 1px 0px 0px #ffffff;
+            width: 100%;
+            background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+            background-color: #ffffff;
+            border-radius: 6px;
+            border: 1px solid #dcdcdc;
+            display: inline-block;
+            cursor: pointer;
+            color: #666666;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
+        }
+
+        options input {
+            box-shadow: inset 0px 1px 0px 0px #ffffff;
+            width: 75%;
+            background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+            background-color: #ffffff;
+            border-radius: 6px;
+            border: 1px solid #dcdcdc;
+            display: inline-block;
+            cursor: pointer;
+            color: #b9b8b8;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
+    </style>
+    <script defer="defer" src="index.js"></script>
+</head>
+
+<body>
+    <main id="main">
+        <h1 class="title titleMain" id="titleMain"></h1>
+                <br>
+
+        <h2 class="title titleSub" id="titleSub" ></h2>
+    </main>
+    <options id="options" style="display: none;">
+        <h2>Options</h2>
+        <form><input id="userName" name="userName" required placeholder="Username"> <p><button id="submit">Submit</button></p></form>
+        <p><button id="closeOptions">Close Options</button></p>
+    </options>
+    <script src="main.js"></script>
+</body>
+
+</html>

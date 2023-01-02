@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Twittab",
+  "version": "1.0",
+  "description": "Displays a random tweet from a user selected account when a new tab is opened",
+  "permissions": [
+     "storage"
+  ],
+      "host_permissions": ["https://api.twitter.com/*"],
+
+    "author": {
+    "name": "Mohammad Abbas",
+    "url": "https://github.com/AbbasPlusPlus"
+  },
+  "bearerToken": "",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
